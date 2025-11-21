@@ -4,9 +4,12 @@ import Loading from '../components/Loading';
 import BlurCircle from '../components/BlurCircle';
 import timeFormat from '../lib/timeFormat';
 import { dateFormat } from '../lib/dateFormat';
+import { useAppContext } from '../context/AppContext';
 
 const MyBookings = () => {
   const currency = import.meta.env.VITE_CURRENCY;
+
+  const {shows, axios, getToken, user, fetchFavoriteMovies, favoriteMovies, image_base_url} = useAppContext();
 
   const [bookings, setBookings] = useState([])
   const [isLoading, setIsLoading] = useState(true)
