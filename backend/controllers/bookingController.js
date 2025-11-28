@@ -89,7 +89,11 @@ export const createBooking = async (req, res) => {
         bookingId: booking._id.toString(),
       },
     });
-    res.json({ success: true, url: session.url });
+    res.json({
+      success: true,
+      message: "Booked Successfully",
+      url: session.url,
+    });
   } catch (error) {
     console.log(error.message);
     res.json({ success: false, message: error.message });
