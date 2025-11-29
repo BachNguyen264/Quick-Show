@@ -4,6 +4,7 @@ export const dateFormat = (date) => {
     month: 'long',
     day: 'numeric',
     hour: 'numeric',
-    minute: 'numeric'
+    minute: 'numeric',
+    timeZone: 'Asia/Ho_Chi_Minh'
   })
 }

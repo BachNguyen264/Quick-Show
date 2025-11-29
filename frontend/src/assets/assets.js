@@ -4,6 +4,7 @@ import googlePlay from './googlePlay.svg'
 import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
 import profile from './profile.png'
+import disneyLogo from './Disney-Plus-Logo-PNG.png'
 
 export const assets = {
     logo,
@@ -11,25 +12,26 @@ export const assets = {
     googlePlay,
     appStore,
     screenImage,
-    profile
+    profile,
+    disneyLogo
 }
 
 export const dummyTrailers = [
   {
-    image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/WpW36ldAqnM"
+    image: "https://i.ytimg.com/vi/BjkIOU5PhyQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD6_2Ch_TJ33V7CGcYnTSNVhVZGIA",
+    videoUrl: "https://www.youtube.com/embed/BjkIOU5PhyQ"
   },
   {
-    image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/-sAOWhvheK8"
+    image: "https://i.ytimg.com/vi/R2Xubj7lazE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA3n0SihMbh32KLZNMNGngHao_uFg",
+    videoUrl: "https://www.youtube.com/embed/R2Xubj7lazE"
   },
   {
-    image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/1pHDWnXmK7Y"
+    image: "https://i.ytimg.com/vi/x--N03NO130/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAo9-3_D0Iw1tSaxYxduQCBKAqeKQ",
+    videoUrl: "https://www.youtube.com/embed/x--N03NO130"
   },
   {
-    image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/umiKiW4En9g"
+    image: "https://i.ytimg.com/vi/PckXEpjvHyg/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDPJ0FBZhWHgeaQJNQrmLhtBiTcaw",
+    videoUrl: "https://www.youtube.com/embed/PckXEpjvHyg"
   }
 ];
 
