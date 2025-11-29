@@ -26,12 +26,12 @@ export const dummyTrailers = [
     videoUrl: "https://www.youtube.com/embed/R2Xubj7lazE"
   },
   {
-    image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/1pHDWnXmK7Y"
+    image: "https://i.ytimg.com/vi/x--N03NO130/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAo9-3_D0Iw1tSaxYxduQCBKAqeKQ",
+    videoUrl: "https://www.youtube.com/embed/x--N03NO130"
   },
   {
-    image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/embed/umiKiW4En9g"
+    image: "https://i.ytimg.com/vi/PckXEpjvHyg/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDPJ0FBZhWHgeaQJNQrmLhtBiTcaw",
+    videoUrl: "https://www.youtube.com/embed/PckXEpjvHyg"
   }
 ];
 
