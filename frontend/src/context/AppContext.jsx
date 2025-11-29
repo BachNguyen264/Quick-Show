@@ -13,6 +13,8 @@ export const AppProvider = ({ children }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [shows, setShows] = useState([]);
   const [favoriteMovies, setFavoriteMovies] = useState([]);
+  const [paymentUrl, setPaymentUrl] = useState(
+    localStorage.getItem("paymentUrl") || null);
 
   const image_base_url = import.meta.env.VITE_TMDB_IMAGE_BASE_URL;
 
@@ -81,7 +83,7 @@ export const AppProvider = ({ children }) => {
     axios,
     fetchIsAdmin,
     user, getToken, navigate, isAdmin, shows,
-    favoriteMovies, fetchFavoriteMovies, image_base_url
+    favoriteMovies, fetchFavoriteMovies, image_base_url, paymentUrl, setPaymentUrl
   }
 
   return (
