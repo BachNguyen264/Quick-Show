@@ -23,6 +23,24 @@ export const AppProvider = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const DEFAULT_SHOW = {
+    title: "Predator: Badlands",
+    overview: "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+    genres: [{
+        id: 28, name: 'Action'
+      },
+      {
+        id: 827, name: 'Science Fiction'
+      },
+      {
+        id: 12, name: 'Adventure'
+      }
+    ],
+    release_date: "2025-11-05",
+    runtime: 107,
+    backdrop_path: "/ebyxeBh56QNXxSJgTnmz7fXAlwk.jpg"
+  };
+
   const fetchIsAdmin = async ()=> {
     try {
       const {data} = await axios.get('/api/admin/is-admin', {
@@ -83,7 +101,8 @@ export const AppProvider = ({ children }) => {
     axios,
     fetchIsAdmin,
     user, getToken, navigate, isAdmin, shows,
-    favoriteMovies, fetchFavoriteMovies, image_base_url, paymentUrl, setPaymentUrl
+    favoriteMovies, fetchFavoriteMovies, image_base_url, paymentUrl, setPaymentUrl,
+    DEFAULT_SHOW
   }
 
   return (
