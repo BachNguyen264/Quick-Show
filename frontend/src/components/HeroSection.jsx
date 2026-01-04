@@ -8,19 +8,19 @@ import timeFormat from '../lib/timeFormat'
 const HeroSection = () => {
 
   const navigate = useNavigate();
-  const { image_base_url, axios} = useAppContext();
-  const [bgImage, setBgImage] = useState(null);
-  const [title, setTitle] = useState(null);
-  const [showGenre, setShowGenre] = useState([]);
-  const [releaseDate, setReleaseDate] = useState(null);
-  const [runTime, setRunTime] = useState(null);
-  const [overview, setOverview] = useState(null);
+  const { image_base_url, axios, DEFAULT_SHOW} = useAppContext();
+  const [title, setTitle] = useState(DEFAULT_SHOW.title);
+  const [overview, setOverview] = useState(DEFAULT_SHOW.overview);
+  const [showGenre, setShowGenre] = useState(DEFAULT_SHOW.genres);
+  const [releaseDate, setReleaseDate] = useState(DEFAULT_SHOW.release_date);
+  const [runTime, setRunTime] = useState(DEFAULT_SHOW.runtime);
+  const [bgImage, setBgImage] = useState(image_base_url + DEFAULT_SHOW.backdrop_path);
 
   const getShowInfo = async ()=> {
     const { data } = await axios.get('/api/show/all');
     
     const backdrop_path = data.shows[0].backdrop_path;
-    const imgLink = image_base_url + backdrop_path
+    const imgLink = image_base_url + backdrop_path;
 
     const showTitle = data.shows[0].title;
     const genre = data.shows[0].genres;
@@ -45,7 +45,7 @@ const HeroSection = () => {
       style={{
       backgroundImage: bgImage ? `url(${bgImage})` : "none",
       }}
-      className={`flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-cover bg-center h-screen`}>
+      className={`flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-cover bg-center h-screen transition-[background-image] duration-500 ease-in-out`}>
 
       <img src={assets.disneyLogo} alt="" className='max-h-11 lg:h-11 mt-20'/>
 
