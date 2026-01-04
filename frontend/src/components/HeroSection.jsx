@@ -45,7 +45,7 @@ const HeroSection = () => {
       style={{
       backgroundImage: bgImage ? `url(${bgImage})` : "none",
       }}
-      className={`flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-cover bg-center h-screen transition-[background-image] duration-500 ease-in-out`}>
+      className={`flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-cover bg-center h-screen transition-[background-image] duration-1000 ease-in-out`}>
 
       <img src={assets.disneyLogo} alt="" className='max-h-11 lg:h-11 mt-20'/>
 
